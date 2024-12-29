@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="WarLight / WarZone strategy guide for general competitive play.">
+    <title>WarLight Strategy Guide</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="holy-grail.css">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="strategy-guide/strategy-guide.css">
+</head>
+<body>
+<header id="pageHeader"><img src="header.webp" alt="Clan Icon"></header>
+<article id="mainArticle">
+    <h1>M'Hunters WarLight Strategy Guide</h1>
+
+    <section id="about">
+        <h2>About This Guide</h2>
+        <p>The goal of this guide is to formalize sound competitive WarLight / Warzone play. It covers 1v1 and team
+            games but not FFA. Initially, this document was just a collection of forum posts by me in the M'Hunters clan
+            internal forum, and this document is mainly a result of copying and pasting them to make them more
+            accessible.</p>
+
+        <p>I believe that the basic building blocks of sound WarLight play can get formalized in a way that you can just
+            turn your brain off, play by those simple rules, and get quite some results. I had to put some thought into
+            how to formalize good WarLight play as I wrote bots for the game. In some way, those bots are just a
+            collection of best practices stitched together, and the sum of those best practices leads them to play
+            WarLight in a relatively sound way.</p>
+
+        <p>I have also made a YouTube video guiding you through the main topics of the guide: <a
+                href="https://www.youtube.com/watch?v=-bw7WBxuHyE" target="_blank">Strategy Guide Video</a></p>
+
+
+    </section>
+
+    <section id="efficient-expansion">
+        <h2>Efficient Expansion</h2>
+        <p><strong>Prerequisite:</strong> 0% luck straight round game, standard settings</p>
+
+        <p><strong>Goal:</strong> Find out about good and bad amounts of armies to attack the opponent.</p>
+
+        <p>The formula for your kills is: <code>"Attacking armies" * 0.6</code>. The result is then rounded to the
+            closest natural number with .5 rounding up.</p>
+
+        <p>Let's assume you attack with <em>X</em> attacking armies:</p>
+        <ul>
+            <li>X = 1 → 1 * 0.6 = 0.6 → 1 (or 0 if the opponent only has 1 army there)</li>
+            <li>X = 2 → 2 * 0.6 = 1.2 → 1</li>
+            <li>X = 3 → 3 * 0.6 = 1.8 → 2</li>
+            <li>X = 4 → 4 * 0.6 = 2.4 → 2</li>
+            <li>X = 5 → 5 * 0.6 = 3 → 3</li>
+            <li>X = 6 → 6 * 0.6 = 3.6 → 4</li>
+            <li>X = 7 → 7 * 0.6 = 4.2 → 4</li>
+        </ul>
+
+        <p><strong>So in conclusion:</strong></p>
+        <p>If you attack the opponent, for example with 4, you won't kill more armies than when attacking with 3. You
+            might find a better use for that extra army. The problem is also that if the opponent deploys heavily there,
+            you are putting 4 armies at risk instead of only 3.</p>
+
+        <p>If the opponent has more than 1 army on a territory, you can attack him with 1. That way you both lose
+            exactly 1 army.</p>
+    </section>
+
+    <section id="expansion-move-order">
+        <h2>Expansion Move Order</h2>
+        <p><strong>Prerequisite:</strong> 0% luck straight round game, standard settings</p>
+
+        <p><strong>Goal:</strong> Find out in what move order to perform your expansion steps.</p>
+
+        <p>Often when you take a territory, you assume that the opponent might also try to take the same territory in
+            the same turn. If both you and your opponent use the same amount of armies to take the territory, it depends
+            on the move order who gets it.</p>
+
+        <p><strong>Case 1:</strong> Both you and your opponent attack the territory with a 3v2 attack.</p>
+        <p><strong>Case 2:</strong> Both you and your opponent attack the territory with a 4v2 attack.</p>
+
+        <p><strong>In Case 1,</strong> the player who moves first takes the territory, loses 1 army and has 2 armies
+            remaining there. Then the player who moves second attacks those two armies with a 3v2 attack and takes the
+            territory.</p>
+
+        <p><strong>In Case 2,</strong> the player who moves first takes the territory, loses 1 army, and has 3 armies
+            remaining there. Then the player who moves second attacks those 3 armies but only manages to kill 2 armies,
+            so he won't take the territory.</p>
+
+        <p><strong>So to sum things up:</strong></p>
+        <ul>
+            <li>3v2 expansion steps where the opponent might also attack should always be performed last order.</li>
+            <li>If you really want a territory, then you might consider a 4v2 expansion step. In that case, you should
+                attack the territory first order so a possible 4v3 attack by your opponent fails. However, if the
+                opponent attacks you with 5, he will kill all your 3 armies there.
+            </li>
+        </ul>
+    </section>
+
+    <section id="attacks-with-1">
+        <h2>Attacks With 1</h2>
+        <p><strong>Prerequisite:</strong> 0% luck straight round game, standard settings</p>
+
+        <p><strong>Goal:</strong> Find out about the advantages and disadvantages of attacking a big opponent stack with
+            1 army.</p>
+
+        <p>If you read the previous rules, then attacking a big stack with 1 makes both you and your opponent lose
+            exactly 1 army. So what are the advantages/disadvantages?</p>
+
+        <p><strong>Disadvantage 1:</strong> The opponent stack might move away before your attack with 1. In this case,
+            you will lose your attacking army, and since the opponent only has 1 army there, they will lose nothing.</p>
+
+        <p><strong>Disadvantage 2:</strong> It might get more likely for the opponent to break your territory. Let's
+            assume the opponent has 5 armies there initially (so they can attack you with 4). You have 3 armies there.
+            That way, they can't kill your 3 armies. But if you first attack him with 1, then you only have 2 remaining
+            armies while they have 4 left (so can attack you with 3). 3 attacking armies are enough to kill 2.</p>
+
+        <p><strong>Advantage 1:</strong> You get an extra move to delay a crucial attack of yours.</p>
+
+        <p><strong>Advantage 2:</strong> You are disturbing a precise opponent calculation.</p>
+        <ul>
+            <li>Let's say the opponent has territory B, and B borders both your territories A and C. The opponent wants
+                to take C and only deploys the minimum amount of armies to get a safe kill. In that case, you can attack
+                from A to kill 1 army of your opponent so they won't get the kill.
+            </li>
+            <li>Let's say a bonus has the territories A, B, and C. You have A with 2 armies, the opponent has B with
+                1000 armies, and C is neutral with 2 armies. The opponent might try to attack you with 996 armies first
+                order (in case you dodge) and take the neutral later order with a 3v2 attack. However, if you manage to
+                hit him first order with a 1v1000 attack, they will then hit your armies still with 996 armies and will
+                have only 2 remaining idle armies, so their attempt to take the bonus with a 2v2 attack fails.
+            </li>
+        </ul>
+
+        <p><strong>Advantage 3:</strong> You might kill more armies if the opponent attacks you. Let's assume the
+            opponent has a huge stack bordering a stack of 2 armies of yours. If you don't attack with 1, the opponent
+            will only lose 1 army while you lose 2. However, if you first attack him with 1, then both you and your
+            opponent will lose 2 armies.</p>
+
+    </section>
+
+    <section id="avoiding-random-picks">
+        <h2>Avoiding Random Picks</h2>
+        <p><strong>Goal:</strong> Find out how many picks you need to avoid random spots.</p>
+
+        <p>If both you and your opponent (or a teammate) go for the same pick, obviously only one of you can get it.
+            Because you might lose your main picks, you need backup picks to avoid random spots. This raises a couple of
+            questions. One of them is how many picks you need in total.</p>
+
+        <p>The easiest formula is:</p>
+        <p><code>"Amount of needed picks" = "Amount of starting spots per player" * "Amount of players in game"</code>
+        </p>
+        <p>This formula is true for all game types (1v1, team games, FFA).</p>
+
+        <p>However, in team games, you might decide to pick other spots than your teammates. In that case, you need
+            fewer backup picks, and the formula is then:</p>
+        <p><code>"Amount of needed picks" = "Amount of starting spots per player" * "Amount of players in game" -
+            "Amount of your teammates" * "Amount of starting spots per player"</code></p>
+        <p>This formula is true since your teammates won't steal your picks in this scenario.</p>
+
+        <p><strong>Examples:</strong></p>
+        <ul>
+            <li><strong>Example 1:</strong> 1v1 against your opponent with 3 starting spots: You need <code>3 * 2 = 6
+                picks</code>.
+            </li>
+            <li><strong>Example 2:</strong> 3v3 team game with 4 starting spots and overlapping picks: You need <code>4
+                * 6 = 24 picks</code>.
+            </li>
+            <li><strong>Example 3:</strong> 3v3 team game with 4 starting spots and non-overlapping picks: You need
+                <code>4 * 6 - 4 * 2 = 16 picks</code>.
+            </li>
+        </ul>
+
+    </section>
+
+    <section id="possible-pick-combinations">
+        <h2>Possible Pick Combinations</h2>
+        <p><strong>Prerequisite:</strong> 1v1 game</p>
+
+        <p><strong>Goal:</strong> Find out about the possible combinations of your picks with which you might end up.
+        </p>
+
+        <p>The pick order works just as the move order. There is an option called <em>"no luck cycle"</em> where the
+            player who commits faster gets their first pick. However, usually, it's random. Let's assume Player 1 goes
+            first. Also, assume that there are 3 starting spots for each player. The picks are then allocated in what I
+            call <em>"rounds"</em> while each round the players alternate.</p>
+
+        <ul>
+            <li><strong>Round 1:</strong> Player 1 - Player 2</li>
+            <li><strong>Round 2:</strong> Player 2 - Player 1</li>
+            <li><strong>Round 3:</strong> Player 1 - Player 2</li>
+        </ul>
+
+        <p>After round 3, both players have their 3 starting spots. As I point out in <em>Lesson: Avoiding random
+            picks</em>, both players need 6 picks when there are 3 starting spots. However, you can't end up with every
+            combination of your picks. If you ended up with your picks 4, 5, and 6, this would mean that your opponent
+            stole your picks 1, 2, and 3. Let us analyze this:</p>
+
+        <p>Round 1: The opponent goes first and steals your pick 1. Then it's your turn, and you get your next
+            highest-ranked pick, which is 2. This means that the opponent can't steal both your 1 and 2.</p>
+
+        <p><strong>Possible combinations for 1v1 and 3 spots (Autogame / Ladder settings):</strong></p>
+        <ul>
+            <li>123 1st/2nd</li>
+            <li>124 1st/2nd</li>
+            <li>125 1st/2nd</li>
+            <li>126 2nd</li>
+            <li>134 1st/2nd</li>
+            <li>135 1st/2nd</li>
+            <li>136 2nd</li>
+            <li>145 1st</li>
+            <li>234 2nd</li>
+            <li>235 2nd</li>
+            <li>236 2nd</li>
+        </ul>
+
+        <p><strong>1st / 2nd</strong> hereby means that you moved first or second during the picking stage.</p>
+
+        <p>There is some interesting information about these combinations:</p>
+        <ul>
+            <li>You can't lose both your picks 1 and 2.</li>
+            <li>Getting your pick 6 means that you both lost your picks 4 and 5.</li>
+            <li>If you get your pick 6, this means that you either ended up with 126, 136, or 236. When it's 126, this
+                means that your opponent has your picks 345. This is often the case when there is a triple-pick, and you
+                check with your 345 if the opponent picked there. However, if you don't check a triple-pick, it's very
+                likely that when you get your number 6, you also ended up with your number 3.
+            </li>
+        </ul>
+        <p>For the possible pick combination in case of an arbitrary amount of starting spots, see <a
+                href="https://github.com/Norman1/WarLight-pick-combinations" target="_blank">
+            Possible Pick Combinations
+        </a></p>
+    </section>
+
+    <section id="board-dependent-moves">
+        <h2>Board Dependent Moves</h2>
+        <p><strong>Goal:</strong> Finding out how to play "Transfer only," "Attack only," "Attack by percentage," and
+            "Marking armies as used"</p>
+
+        <p>All those mentioned moves have one thing in common: you use them if you don't know how the board will look
+            when the move gets executed (or not executed).</p>
+
+        <p>If you use <em>Attack-or-Transfer only</em>, then your current play is that you look at the board and play
+            accordingly. This is also how the AI plays: it always attacks when <code>"AI armies after deployment" >=
+                "Your stack at beginning of turn" * 2</code>. However, you shouldn’t follow the AI here. Instead, you
+            should have a model in your mind about how the board will look like when your moves get executed. If this is
+            your approach, then you will find many circumstances where you don't want to go with the default <em>Attack-or-Transfer</em>.
+        </p>
+        <h3>Transfer Only</h3>
+        <p>You mainly want to use <em>Transfer only</em> when you are afraid of running into a bigger opponent stack.
+            Let's say 11 territories are all bordering each other. The opponent holds 1 territory with 100 armies, and
+            you hold 10 with 10 armies each. This is a bad situation for you, so you want to join your stacks in region
+            A. However, if the opponent attacks A first turn full force, then you will crush 9 times into their stack in
+            A, giving you 9 bad fights.</p>
+        <h3>Attack Only</h3>
+        <p><em>Attack only</em> mainly comes into play when you are playing defense. Let's say the opponent has a stack
+            that is bordering your territories A and B. A is part of your bonus, while B isn't, but B has multiple
+            borders to your bonus. You don't know whether they will hit your bonus directly or flank it via B. In that
+            case, you can deploy in A and use a late order <em>Attack only</em> from A to B in case your opponent went
+            for the flanking option.</p>
+        <h3>Attack By Percentage</h3>
+        <p><em>Attack by percentage</em> comes into play when you don't know how many armies you will have when your
+            move gets executed. This is only the case when your opponent attacks your territory. In all other cases, you
+            can achieve the same with a regular attack. Attacking by percentage is useful when you want to hold some
+            armies back, for example, to blockade the territory.</p>
+
+        <p>Let's say you have 11 armies in region A. You want to attack region B with 5 armies and use the remaining 6
+            armies to blockade A at the end of the round. Before you move from A to B, the opponent attacks A and kills
+            a total of 4 armies.</p>
+
+        <p><strong>Case 1 - You don't use attack by percentage:</strong></p>
+        <p>After the opponent's attack, you have 7 armies left. You move 5 and end up blockading A with 2 armies.</p>
+
+        <p><strong>Case 2 - You use attack by percentage:</strong></p>
+        <p>After the opponent's attack, you have 7 armies left. You move 50% (= 3 armies) and blockade with 4
+            armies.</p>
+
+        <p><strong>Conclusion:</strong> You want to use <em>attack by percentage</em> if you care more about how many
+            armies remain than with how many armies you attack. If the opponent attacks you, then attacking by
+            percentage has the effect that more armies remain while your own attack gets smaller.</p>
+
+        <h3>Attack By Percentage For conditional Delays</h3>
+        <p>You want to use <em>attack by percentage</em> for conditional delays if you find yourself in the following
+            situation:</p>
+
+        <p>You are planning on hitting a stack of your opponent with your own stack. If the opponent hits your stack
+            first, you want to hit him later with your whole remaining stack. However, if the opponent does not hit your
+            stack first, you want to cram in some additional delays by moving armies of 1 away from your stack.</p>
+
+        <p>The solution here is to move those armies of 1 via <em>attack by percentage</em>, setting the percentage so
+            that the move barely rounds to &ge; 0.5. Only moves that move more than &ge; 0.5 armies get executed, while
+            the other moves round to 0. An <em>attack by percentage</em> that rounds to 0 neither gets executed nor
+            marks any armies as used, so you can use all your remaining armies for your big attack.</p>
+
+        <p>As an example, let's look at turn 9 of the following game: <a
+                href="https://www.warzone.com/MultiPlayer?GameID=13572606" target="_blank">https://www.warzone.com/MultiPlayer?GameID=13572606</a>
+        </p>
+
+        <p>The dark blue player here almost managed to wipe teal from the east and thus most likely win the game.
+            However, he failed with teal having only 1 army left. Not knowing how many delays were exactly needed, the
+            dark blue player added many unnecessary delays far outdelaying teal. If he had used <em>attack by
+                percentage</em> for those delay moves, he would have been able to hit teal stronger.</p>
+
+        <h3>Mark Armies As Used</h3>
+        <p>Let's look at the same example as before and see if we can find a better way to blockade with exactly 6
+            armies (prio A) while attacking region B with 5 armies (prio B).</p>
+
+        <p><strong>Step 1:</strong> Mark 5 armies in territory A as used.</p>
+        <p><strong>Step 2:</strong> Attack territory B with 5 armies. If the opponent has attacked us before, we won't
+            attack him with armies that have already been marked as used.</p>
+
+        <p>Those steps explain the "what," but not the "how" to mark armies as used. The way to do this is by using them
+            for a move that can't get executed. There are two ways to do this:</p>
+        <ul>
+            <li>Do an <em>attack only</em> to a friendly territory.</li>
+            <li>Do a <em>transfer only</em> to a territory that isn't friendly.</li>
+        </ul>
+
+        <p>Despite such moves not getting executed, the WarLight game mechanics forbid using the same armies multiple
+            times, so those moves mark the armies as used.</p>
+
+
+    </section>
+
+    <section id="income-costs-ratio">
+        <h2>Income / Costs Ratio</h2>
+        <p><strong>Goal:</strong> Finding out about efficient bonuses.</p>
+
+        <p>When checking the WarLight forums, you will find the terms <em>"Income / neutrals ratio"</em> or <em>"Income
+            / territory ratio"</em> to describe the efficiency of a bonus. Both ratios help to give a quick overview,
+            but
+            I'd rather think in terms of cost for the following reasons:</p>
+
+        <p><strong>Income / territory ratio:</strong></p>
+        <ul>
+            <li>Wastelanded bonuses don't get punished.</li>
+        </ul>
+
+        <p><strong>Income / neutrals ratio:</strong></p>
+        <ul>
+            <li>Infinite value in 0 neutral games.</li>
+            <li>Infinite value of a 1 income - 1 territory bonus during the picking stage (you picking there removes all
+                neutrals).
+            </li>
+            <li>Double value of a bonus where all neutrals are 1 compared to the same bonus with the exception that the
+                neutrals are 2. However, both 1 and 2 defending neutral armies kill 1 of your attacking armies.
+            </li>
+        </ul>
+
+        <p>I recommend seeing the cost of taking a bonus as <code>"Amount of territories" + "Neutral kills"</code>
+            in case of 1 army must stand guard and as <code>Cost = Neutral kills</code> in case 0 armies must stand
+            guard.
+        </p>
+    </section>
+
+    <section id="deployment-order">
+        <h2>Deployment Order</h2>
+        <p><strong>Goal:</strong> Finding out in which order to deploy your armies.</p>
+
+        <p>When playing, you want to have as much information as possible about your opponent while giving him as
+            little information as possible. An often neglected aspect of information you are exposing is the order in
+            which you deploy your armies.</p>
+
+        <p>This is how the game mechanics work: The way the deployment orders get executed works the same as the move
+            orders get executed, and the player who gets first move order also gets first deployment order.</p>
+
+        <p>There are two possible ways to deploy your armies:</p>
+        <ul>
+            <li><strong>Option 1:</strong> First deploy next to your opponent, then deploy where you aren't bordering
+                him.
+            </li>
+            <li><strong>Option 2:</strong> First deploy where you aren't bordering your opponent, then deploy next to
+                him.
+            </li>
+        </ul>
+
+        <p>The disadvantage of <strong>Option 2</strong> is:</p>
+        <ul>
+            <li>When you first deploy in the background, you are giving the opponent the intelligence that you haven't
+                deployed all at their border (so you have more income).
+            </li>
+            <li>Also, calculating the number of times you deployed in the background can give your opponent valuable
+                information.
+            </li>
+        </ul>
+
+        <p>By default, <strong>Option 1</strong> is the way to go, so you want to first deploy next to your opponent and
+            afterward in the background. Also, you want to watch closely what your opponent reveals with their
+            deployment order.</p>
+
+        <p>Here is an example about intelligence your opponent might give you when deploying as in <strong>Option
+            2:</strong></p>
+        <p>You are playing a Strategic 1v1 game and are asking yourself if your opponent took South America or Southeast
+            Asia. They did take South America, deployed 8 at your border, 1 in the background, and moved first:</p>
+
+        <ol>
+            <li>Opponent deploys 1 in the background.</li>
+            <li>You deploy something to a spot.</li>
+            <li>You deploy something to another spot.</li>
+            <li>Opponent deploys 8 at your border.</li>
+        </ol>
+
+        <p>&rarr; You know that the opponent has more than 8 income, so they probably took South America.</p>
+
+    </section>
+
+    <section id="aggressive-late-order">
+        <h2>Aggressive Late Order Play</h2>
+        <p><strong>Goal:</strong> Play more aggressively when you know you get last order.</p>
+
+        <p>Let's assume the game has opened up and both you and your opponent are bordering multiple important spots of
+            each other. You don't know where your opponent will focus on. In such a situation, you should play with very
+            aggressive last order attacks.</p>
+
+        <p>Let's assume you are bordering the opponent in your territory A and the opponent's territory B (amongst
+            probably many other spots). You want to break B but are afraid to run into a bigger stack than yours, and
+            the opponent might also attack you from B. Let's assume you have 24 armies (attack with 23) and
+            the opponent has 28 armies (attack with 27).</p>
+
+        <p><strong>Case 1:</strong> First your attack happens, and then the opponent attacks.</p>
+        <p><strong>Initial:</strong></p>
+        <ul>
+            <li><strong>Opponent:</strong> 28</li>
+            <li><strong>You:</strong> 24</li>
+        </ul>
+        <p><strong>Situation after your attack:</strong></p>
+        <ul>
+            <li><strong>Opponent kills:</strong> 20</li>
+            <li><strong>Own kills:</strong> 14</li>
+            <li><strong>Opponent:</strong> 14</li>
+            <li><strong>You:</strong> 4</li>
+        </ul>
+        <p><strong>Situation after opponent attack:</strong></p>
+        <ul>
+            <li><strong>Opponent kills:</strong> 24 (20 + 4)</li>
+            <li><strong>Own kills:</strong> 17 (14 + 3)</li>
+            <li>The opponent kills 7 armies more and also takes your territory, which probably hurts most.</li>
+        </ul>
+
+        <p><strong>Case 2:</strong> First the opponent attacks, and then your attack happens.</p>
+        <p><strong>Initial:</strong></p>
+        <ul>
+            <li><strong>Opponent:</strong> 28</li>
+            <li><strong>You:</strong> 24</li>
+        </ul>
+        <p><strong>Situation after opponent attack:</strong></p>
+        <ul>
+            <li><strong>Opponent kills:</strong> 16</li>
+            <li><strong>Own kills:</strong> 17</li>
+            <li><strong>Opponent:</strong> 11</li>
+            <li><strong>You:</strong> 8</li>
+        </ul>
+        <p><strong>Situation after your attack:</strong></p>
+        <ul>
+            <li><strong>Opponent kills:</strong> 23 (16 + your 7 attacking armies)</li>
+            <li><strong>Own kills:</strong> 21 (17 + 4)</li>
+            <li><strong>Opponent:</strong> 7</li>
+            <li><strong>You:</strong> 1</li>
+        </ul>
+        <p>So the opponent only kills 6 armies more and won't take the territory.</p>
+
+        <p>As you see, running into a bigger opponent stack is still a bad thing, even if you get last order. However,
+            it's not as bad as when you don't get last order.</p>
+    </section>
+
+    <section id="non-default-expansion">
+        <h2>Do Not Expand By Default</h2>
+        <p><strong>Goal:</strong> When you are having a couple of leftovers, you might want to use them for an
+            "unplanned" expansion step that you might not have done without those armies. However, this is very often
+            not a good decision.</p>
+
+        <p>Let's say you have 3 leftovers in a territory and can use them to just randomly attack a neutral territory in
+            a bonus that you might get in a couple of turns. This is usually a bad decision, and you have to ask
+            yourself a couple of questions before doing so:</p>
+
+        <ul>
+            <li><strong>Question 1:</strong> Are you planning on meeting your opponent soon? Can you then continue your
+                expansion?
+            </li>
+            <li><strong>Question 2:</strong> If there are reinforcement card pieces, and you are already taking a
+                territory this turn, then is it possible that after a couple of turns you might have problems taking a
+                territory since the opponent is pressuring you, and you need your armies for defense?
+            </li>
+            <li><strong>Question 3:</strong> Those 3 leftovers give you a total of 3 delay moves. If you attack that
+                territory, you only end up with 1 leftover, so you lose 2 possible delay moves. Is that a possible
+                problem? (<em>Hint:</em> It usually is!)
+            </li>
+            <li><strong>Question 4:</strong> Neutrals are "neutral" and the opponent is your "enemy." Can you use those
+                armies to kill him instead?
+            </li>
+        </ul>
+
+    </section>
+
+    <section id="fighting-over-expanding">
+        <h2>Fighting > Expanding</h2>
+        <p><strong>Prerequisite:</strong> 2 neutral game</p>
+
+        <p><strong>Goal:</strong> Often you have the option to either gain your own bonus via expansion or to break an
+            opponent's bonus. The latter is better.</p>
+
+        <p>Let's assume you have the option to either take a +3 bonus or to break a +3 bonus of your opponent.</p>
+
+        <p>There are some benefits of breaking your opponent instead of expanding:</p>
+
+        <ul>
+            <li><strong>Benefit 1:</strong> With the break, you also kill more opponent armies than you lose. However,
+                when you expand, you initially lose armies fighting neutrals.
+            </li>
+            <li><strong>Benefit 2:</strong> When you break your opponent's bonus, the situation isn't over yet. You have
+                a huge stack in your opponent's bonus and can often threaten to take the bonus completely over or use
+                those armies to break another bonus of your opponent. He then has to start guessing (Will he attack A or
+                B, or maybe take over my bonus instead...?).
+            </li>
+            <li><strong>Benefit 3:</strong> By deploying to the fighting spots, you ensure that you keep the upper hand.
+                If the opponent deploys there, and you do not, then he can gain ground.
+            </li>
+            <li><strong>Benefit 4:</strong> A disadvantage of going for the expansion option is that you become more
+                vulnerable since the opponent might try to attack the bonus you took. If you didn't take the bonus, then
+                there is nothing for your opponent to attack—plain and simple.
+            </li>
+            <li><strong>Benefit 5:</strong> You are binding the opponent. Without your attacks, he is capable of trying
+                out other strategies, such as out-expanding you or showing up at your own bonuses. However, if you keep
+                him busy, his hands are more tied.
+            </li>
+        </ul>
+
+    </section>
+
+    <section id="offense-over-defense">
+        <h2>Offense > Defense</h2>
+        <p><strong>Goal:</strong> You want to be on the offense, not on the defense.</p>
+
+        <p>With offense/defense, I mean whether you are threatening your opponent (<strong>offense</strong>) or the
+            opponent is threatening you (<strong>defense</strong>). There are 3 possible combinations:</p>
+
+        <ul>
+            <li><strong>You = offense, opponent = defense</strong></li>
+            <li><strong>You = defense, opponent = offense</strong></li>
+            <li><strong>You = offense + defense, opponent = offense + defense</strong></li>
+        </ul>
+
+        <p>One of the most important parts of my gameplay is that I always try to be on the offense instead of on the
+            defense. Of course, there is also the aspect of out-predicting your opponent. However, this only works when
+            there are flaws in your opponent's play on which you can build your own strategy. It's best to never get
+            into a situation where you need to out-predict your opponent.</p>
+
+        <p>There are many problems with being on the defense (and vice versa, benefits of being on the offense):</p>
+
+        <ul>
+            <li><strong>Problem 1:</strong> If an opponent stack borders your bonus in multiple ways, you have to guess
+                where he will attack. A wrong guess is a huge problem, while the opponent guessing your defense wrong
+                isn't that big of a problem.
+            </li>
+            <li><strong>Problem 2:</strong> If the opponent has the initiative, he can outplay you. For example, if they
+                border an important bonus of yours, they can decide not to attack you but instead expand themselves
+                while you need to deploy there. They might even dodge a possible attack of yours with minimal
+                deployment, and next turn, they can again decide whether to attack you or just keep expanding.
+            </li>
+        </ul>
+
+        <p>There are a couple of rules that you can follow to ensure you are on the offense and not on the defense:</p>
+
+        <ul>
+            <li><strong>Rule 1:</strong> Don't cluster-pick. If you cluster-picked, the best thing to happen is that
+                your opponent also cluster-picked the same bonus. In this case, you are both on offense + defense, and
+                it's a fair fight (<em>Never get into a fair fight!</em>). However, if the opponent only has 1 spot in
+                or next to your cluster-pick, they can be on full offense while you are just defending.
+            </li>
+            <li><strong>Rule 2:</strong> Carry the fight to your opponent. If you don't show up at your opponent's
+                border, the opponent will show up at your border.
+            </li>
+        </ul>
+
+    </section>
+
+    <section id="playing-for-team">
+        <h2>Play For The Team</h2>
+        <p><strong>Prerequisite:</strong> Team game</p>
+
+        <p><strong>Goal:</strong> You win as a team and lose as a team. There is probably no correlation between playing
+            strength and your income position at the end of the game compared to your teammates.</p>
+
+        <p>I guess the biggest reason players go for a cluster-pick on the Rise of Rome map isn't to get a mega-bonus
+            faster but to avoid running into multiple opponents from the start. If you are really going for a team
+            victory, this is a terrible reason to cluster-pick.</p>
+
+        <p>The formula for when it is a good thing to run into multiple opponents is:</p>
+        <p><code>"Damage that you are doing" > "Damage that the opponents are doing to you"</code></p>
+
+        <p><strong>"Damage"</strong> here is an abstract concept that involves all kinds of factors like:</p>
+        <ul>
+            <li>Broken bonuses</li>
+            <li>Killed armies</li>
+            <li>You help your teammate gain the upper hand</li>
+            <li>You stall the expansion of your opponents</li>
+            <li>…</li>
+        </ul>
+
+        <p>If you are just looking at the first two factors (<strong>Broken bonuses</strong> and <strong>Killed
+            armies</strong>), running into two opponents is usually a bad thing. However, there are such huge other
+            benefits to running into multiple opponents that (if you pick and play correctly) it is usually a very good
+            thing. You should be capable of being on the offense for a couple of turns, or at least not just defending.
+            The worst mistake in such a situation is to expand.</p>
+
+        <p>Look at the following game with me playing with random teammates: <a
+                href="https://www.warlight.net/MultiPlayer?GameID=8113103" target="_blank">https://www.warlight.net/MultiPlayer?GameID=8113103</a>
+        </p>
+
+        <p>Since I saw the rather nonsensical Partha cluster-pick and I know that "Partha only" loses to "Partha + Asia
+            only," I
+            decided to pick Alexandria and hit Asia as soon as possible. I also ran into an opponent in Macedonia. At
+            first glance, I didn't do that much damage to the player in Asia, and me fighting him also would have led to
+            a long-term defeat against the player in Macedonia. However, me showing up in Asia was enough to give the
+            Partha player (who would have lost otherwise) a very easy win against the Asia player. A little help from me
+            shifted the game towards a team victory.</p>
+
+    </section>
+
+    <section id="analyze">
+        <h2>Analyze</h2>
+        <p><strong>Goal:</strong> You want to analyze the game while it is going on and also after it has already
+            finished.</p>
+
+        <p>Here is some advice:</p>
+        <ul>
+            <li>Don't play multiple real-time games at a time but completely focus on one game.</li>
+            <li>Don't play a 5-minute game as a 1- or 2-minute game.</li>
+            <li>Don't use the "Skip to End" button.</li>
+        </ul>
+
+        <p>During the game, you have to be fully aware of what is going on:</p>
+        <ul>
+            <li>What bonuses does the opponent have?</li>
+            <li>When will the opponent get their next reinforcement card?</li>
+            <li>Why didn't the opponent deploy all their income at your border? What are they doing with the missing
+                armies?
+            </li>
+            <li>How many orders do you need to out-delay your opponent?</li>
+            <li>How is it possible that the opponent showed up with a stack of 5 at your border on turn 2? Weren't they
+                expanding?
+            </li>
+            <li>Is your current strategy successful, or is the opponent outplaying you by playing a counter-strategy?
+            </li>
+            <li>What is your opponent thinking? What is your opponent thinking that you are thinking?</li>
+        </ul>
+
+        <p>Use your calculator to keep calculating stuff. For example, you have about a 50% chance for three 80% attacks
+            to all succeed. Also, if you know your opponent's income, you can just deploy the minimum amount of armies
+            to avoid getting broken.</p>
+
+        <p>Also, after the game you have to analyze:</p>
+        <ul>
+            <li>Could the opponent have won this game at a certain point if they had played it better?</li>
+            <li>Why did you lose this game? Was it due to lucky predictions of your opponent? What did you do wrong?
+                What did the opponent do better?
+            </li>
+        </ul>
+        <p>In the following video I show how to remove the fog in 1v1 games: <a
+                href="https://www.youtube.com/watch?v=_k0ANj7Bwro" target="_blank">WarLight - how to remove the fog</a>.
+        </p>
+    </section>
+
+    <section id="first-turn-bonus-play">
+        <h2>First Turn Bonus Play</h2>
+        <p><strong>Goal:</strong> You took a first turn bonus. Therefore, you had to use 2-3 picks (Autogame settings).
+            What now?</p>
+
+        <p>First of all, putting all picks into one area is problematic, as I point out in <strong>Lesson: Offense >
+            Defense</strong>.</p>
+
+        <p>You going for the first turn bonus (by probably putting all 3 spots into one area) has some advantages:</p>
+        <ul>
+            <li><strong>Advantage 1:</strong> You get a higher initial income after the first turn.</li>
+            <li><strong>Advantage 2:</strong> After the first turn, you have quite a high amount of armies floating
+                around the bonus that you clustered.
+            </li>
+        </ul>
+
+        <p>The disadvantages are, however:</p>
+        <ul>
+            <li><strong>Disadvantage 1:</strong> If the opponent is nearby and threatens you, you risk a swift defeat.
+            </li>
+            <li><strong>Disadvantage 2:</strong> Since your opponent was covering the good parts of the map while you
+                are stuck in one area, they will probably be capable of expanding faster than you.
+            </li>
+            <li><strong>Disadvantage 3:</strong> You lack information about your opponent, while they probably know
+                quite well where you are.
+            </li>
+            <li><strong>Disadvantage 4:</strong> If the first turn bonus is obvious, you risk a strong counter-play
+                directed directly at your strategy.
+            </li>
+        </ul>
+
+        <p>Those advantages and disadvantages should make it quite obvious that there is only one sound way to play a
+            first turn bonus:</p>
+        <ol>
+            <li><strong>Step 1:</strong> Take the first turn bonus.</li>
+            <li><strong>Step 2:</strong> Kill your opponent with your initial momentum.</li>
+        </ol>
+
+        <p>So, if you manage to play "Ultra offense" with your first turn bonus instead of "defense," you don't violate
+            my advice <strong>"Offense > Defense."</strong></p>
+
+    </section>
+
+    <section id="working-armies">
+        <h2>Working Armies</h2>
+        <p><strong>Goal:</strong> Armies are like money. You want to work with them instead of putting them under your
+            pillow.</p>
+
+        <p>The term <strong>"working armies"</strong> needs a definition. I define working armies as armies that you are
+            putting to use this turn, more precisely:</p>
+
+        <ul>
+            <li>Armies from a reinforcement card that you aren't playing this turn aren't working.</li>
+            <li>Armies that are standing still (without defending) aren't working.</li>
+            <li>Armies that you use marching strongly towards the opponent aren't working.</li>
+            <li>Armies you are using to feed a teammate aren't working.</li>
+        </ul>
+
+        <p>However:</p>
+        <ul>
+            <li>Armies used for order delay moves are working.</li>
+            <li>All armies next to the opponent are always working.</li>
+            <li>All armies used for expansion are working.</li>
+        </ul>
+
+        <p>As a rule, you want each and every army to work. Only in well-defined exceptions might you consider playing
+            with non-working armies.</p>
+
+        <p><strong>Possible exceptions:</strong></p>
+        <ul>
+            <li><strong>Possible exception 1:</strong> You don't play a reinforcement card this turn to have more
+                initiative next turn.
+            </li>
+            <li><strong>Possible exception 2:</strong> You build a huge stack before meeting your opponent since
+                otherwise you wouldn't have enough income to break him.
+            </li>
+            <li><strong>Possible exception 3:</strong> You stack in the background because you can't defend your front.
+            </li>
+            <li><strong>Possible exception 4:</strong> You stack in the background to trick your opponent into running
+                into a big stack.
+            </li>
+        </ul>
+
+        <p>The part I'm mostly interested in is <strong>"Possible exception 2"</strong> since I often see gameplay that
+            looks like this exception but is, in fact, rather nonsensical. This can have various reasons:</p>
+
+        <ul>
+            <li>In a team game, the player building this huge stack already has a big enough income advantage that they
+                could hit their opponent without needing their initial stack.
+            </li>
+            <li>The player builds this huge stack but as they meet their opponent, they aren't again deploying to this
+                stack but are expanding instead (a huge mistake, especially in Rise of Rome team games).
+            </li>
+        </ul>
+
+    </section>
+
+    <section id="relative-safety">
+        <h2>Relative Safety</h2>
+        <p><strong>Goal:</strong> Finding out about safety and how to make your income safe.</p>
+
+        <p>Mostly there isn't any "real" safety for you. There is fog, and theoretically, the opponent can be almost
+            everywhere. However, practically, there is some relative safety, and during the picking stage, you can build
+            your own safety zones.</p>
+
+        <p>With relative safety, you assume that your opponent didn't go for a badass counter-pick but picked
+            normally.</p>
+
+        <p>Look at the board of the following game between Renegade and UniVersal: <a
+                href="https://www.warlight.net/MultiPlayer?GameID=8065702" target="_blank">https://www.warlight.net/MultiPlayer?GameID=8065702</a>
+        </p>
+
+        <p>If you got a spot in Indonesia after picks, then there was no way for your opponent to be close. Indonesia
+            was safe on its own.</p>
+
+        <p>Scandinavia isn't safe on its own. If the opponent sits in West Russia, they can attack you. However, you can
+            make Scandinavia safe by also picking West Russia. If you got West Russia, then you know you can safely
+            expand in Scandinavia, and if you haven't, then you know that you aren't safe at all.</p>
+
+        <p><strong>Relative safety</strong> is especially important during the following stages:</p>
+        <ul>
+            <li><strong>Picking stage:</strong> You can make bonuses safe by picking neighboring bonuses.</li>
+            <li><strong>Start of the game:</strong> You want to start by expanding in your safest bonus. If you don't,
+                and the opponent is nearby and has expanded in a safe bonus, then this often results in losing the game.
+            </li>
+        </ul>
+
+    </section>
+
+    <section id="norman-way-of-picking">
+        <h2>The "Norman Way" Of Thinking About Picks</h2>
+        <p><strong>Goal:</strong> This advice aims at giving you an easily comprehensible explanation about how the
+            creator of this guide evaluates a picking outcome.</p>
+
+        <p>I introduced the following 4 terms to explain to my clanmates what I think about their picking outcomes:</p>
+
+        <ul>
+            <li><strong>Bonus coverage:</strong> A pick covers a bonus if you can border that bonus within 2 steps from
+                the bonus containing the pick.
+            </li>
+            <li><strong>Map coverage:</strong> Map coverage is defined as having bonus coverage over all reasonable
+                possible opponent bonuses.
+            </li>
+            <li><strong>Clustered pick:</strong> Two picks are clustered if there is a reasonable opponent pick in
+                between which has bonus coverage over both bonuses containing those picks.
+            </li>
+            <li><strong>Hope play pick:</strong> A hope play pick is a pick where you don’t know from which direction to
+                expect your opponent to come from after you took the containing bonus.
+            </li>
+        </ul>
+
+        <p><strong>Advantageous neighbor:</strong> Each bonus A has some neighboring bonuses X, Y, Z, ... X is
+            advantageous over A if, when one player has A and their opponent has X, then the player having X has some
+            sort of advantage. This means mostly one of the following:</p>
+
+        <ul>
+            <li>A has a double border to X, but X has only a single border to A.</li>
+            <li>A is bigger than X.</li>
+        </ul>
+
+        <p><strong>Advantageous distant neighbors:</strong> You want to extend the advantageous neighbor definition to
+            bonuses that have bonus coverage over your bonus (and vice versa, of course).</p>
+
+        <p>Regarding bonus coverage and map coverage, I found the 2 steps to reach the opponent bonus as quite
+            reasonable for defining bonus coverage when it comes to 1v1 ladder settings.</p>
+
+        <ul>
+            <li>If the picks are more scarce than usual, you want to use a bigger number than 2.</li>
+            <li>If the picks are more packed than usual, you probably want to use 1 step instead of 2.</li>
+        </ul>
+
+        <p>Generally speaking, you want to spread out your picks in order to get full map coverage, so there is no
+            opponent bonus out of reach.</p>
+
+        <p>The following graphic helps you to understand bonus coverage:</p>
+        <img src="strategy-guide/Bonus-Coverage.png" alt="Bonus Coverage" width="681" height="459"
+             class="responsive-image">
+        <p>The ‘x’ markers represent your 2 pick outcomes, and the surrounding circles show which bonuses are
+            covered by those picks. Since the wasteland in Scandinavian Peninsula blocks your path towards West Russia,
+            the pick in Greenland does not cover West Russia. Also, I accepted here the West African pick covering
+            Central America; however, then again, you have to pass a +4 on the way and a wastelanded South America, so
+            it’s pretty much a “meh” coverage.</p>
+
+        <p>As you can see from the circles, we have bonus coverage over all reasonable opponent bonuses, so we have full
+            map coverage.</p>
+
+        <p>The following graphic shows you the same picking outcomes from the hope play perspective:</p>
+        <img src="strategy-guide/Hope-Play.png" alt="Hope Play" width="775" height="509" class="responsive-image">
+
+    </section>
+
+    <section id="attacker-vs-defender-play">
+        <h2>Why Attackers Should Flank And Defenders Should Defend Their Bonus</h2>
+        <p><strong>Goal:</strong> I cover a very difficult topic here; however, even if you don’t understand everything,
+            it should enhance your understanding of optimal WarLight play.</p>
+        <p>I asked my clanmates in our clan forum for a solution to the following riddle:</p>
+        <h3>The Riddle</h3>
+        <img src="strategy-guide/Riddle.png" alt="Riddle" width="284" height="482" class="responsive-image">
+        <p>The players are named “Red” and “Green” and own the territories according to the colors of the graphic.</p>
+        <p>If Red manages to break the bonus C within 2 turns, he wins. Else Green wins.</p>
+        <p>For simplicity, we are assuming no split mode. Also, Green has enough income to defend 1 territory and not 2.
+            No fancy moves allowed, just 1 badaboom hit, either into a wall or into an unprotected territory.</p>
+
+        <p>We are only interested in turn 1:</p>
+        <ul>
+            <li>If Red breaks C1, he immediately wins.</li>
+            <li>If Red flanks to B1, we assume a 50% chance of him choosing turn 2 correctly and thus winning the
+                game.
+            </li>
+        </ul>
+
+        <p>Both Red and Green are WarLight bots. Their default behavior is to play in an immaculate way. However, if
+            they realize a flaw in their opponent's algorithm, they exploit it. Both bots are capable of reading the
+            source code of the other bot.</p>
+
+        <p>I have 2 questions:</p>
+        <ol>
+            <li>What is Green's immaculate decision of which Red can’t take advantage?</li>
+            <li>What is Red's immaculate decision of which Green can’t take advantage?</li>
+        </ol>
+
+        <p>As for the answer, I expect something like the following:</p>
+        <p>Green has to defend B1 10% of the time and C1 90% of the time.</p>
+        <p>Red has to attack B1 100% of the time and C1 0% of the time.</p>
+        <p>The percentages above are just random numbers adding up to 100%. Your task is to find the correct
+            numbers.</p>
+
+        <h3>The Solution</h3>
+        <p>Breaking C1 has double the value of breaking B1 since when you break B1, you still have a 50% chance of
+            messing it up. That’s why we have to solve <code>2 * B1 = C1</code>, which boils down to a 33% to 66% ratio.
+        </p>
+
+        <p>Green has to defend B1 33% of the time and C1 66% of the time.</p>
+        <p>Red has to attack B1 66% of the time and C1 33% of the time.</p>
+
+        <p>If both players play optimally, the attacker has a 33% chance of breaking the bonus.</p>
+
+        <p>Now let’s make some examples where one of the bots plays imperfectly and the other bot abuses him:</p>
+        <ul>
+            <li>If the defender throws a 50/50 dice on whether to defend B1 or C1, the attacker can always attack C1.
+                This gives him a 50% chance of winning.
+            </li>
+            <li>If the defender always defends C1, then the attacker can always attack B1. This also gives him a 50%
+                chance of winning.
+            </li>
+            <li>If the attacker instead hits C1 instead of B1 66% of the time, the defender can abuse this by always
+                defending C1. Then the attacker only ends up with a <code>33% * 50% = 16.5%</code> chance of winning the
+                game.
+            </li>
+        </ul>
+
+        <h3>General Takeaways</h3>
+        <p>As for myself, I find the results extremely fascinating. The actual numbers of this simplified example don’t
+            apply to WarLight, but we can extract some general rules which do apply. With great caution according to
+            your particular game, you can (to some extent) extract the following rules:</p>
+
+        <ul>
+            <li>If you are the attacker, you should prefer flanking, while if you are the defender, you should prefer
+                defending your bonus.
+            </li>
+            <li>If you border 2 opponent bonuses, prefer to attack the less important one. However, if you find yourself
+                as the defender here, prefer to defend the more important one.
+            </li>
+        </ul>
+
+        <p><strong>And more generally:</strong> The defender usually wins in a symmetric situation, and the attacker in
+            an asymmetric situation. By this I mean that the defender wins if both players choose the same territory to
+            focus on, while the attacker wins if both players choose different territories.</p>
+
+        <p>If you find yourself winning in a symmetric situation, you want to prefer the option which gives you more
+            value, and if you find yourself winning in an asymmetric situation, you want to prefer the option which
+            gives you less value.</p>
+
+
+    </section>
+
+    <section id="dirty-gifting">
+        <h2>Dirty Gifting</h2>
+        <p><strong>Prerequisite:</strong> Team game, gift card enabled</p>
+
+        <p><strong>Goal:</strong> Finding out about gifting stuff to your opponent</p>
+
+        <p>By default, "Attack teammates" is set to false. Therefore, when an opponent attacks a territory that you are
+            gifting the same turn to one of their teammates, instead of an attack, a transfer order will happen and the
+            other opponent will get those armies.</p>
+
+        <p>There are some common examples when this is beneficial:</p>
+
+        <ul>
+            <li><strong>Example 1:</strong> By killing you in an important bonus, the opponent will also completely take
+                the bonus over.
+            </li>
+            <li><strong>Example 2:</strong> The attacking opponent has superior income, but so far he isn't really
+                coming into play. If you then gift the attacked territory to an opponent with inferior income, you might
+                be able to take the attacking player with superior income out of the game for a while longer.
+            </li>
+            <li><strong>Example 3:</strong> The plan of the attacking player is to crush your income source (for
+                example, he is running for Parthian Empire). Before he arrives, you might then find a situation where
+                you can gift an attacked territory to an opponent who doesn't have the capability of really deploying
+                strongly against you.
+            </li>
+            <li><strong>Example 4:</strong> If you can't get card pieces otherwise, you can gift to your opponent and
+                then immediately attack the gifted territory.
+            </li>
+        </ul>
+
+    </section>
+
+    <section id="apendix">
+        <h2>Appending: Game Mechanics</h2>
+        <p>This section explains some of the different game mechanics in a concise manner. The goal isn’t to give a
+            complete overview but mainly to explain some mechanics which even experienced players often don’t know
+            exactly about.</p>
+
+        <p>This guide uses the following conventions:</p>
+        <ul>
+            <li><strong>Turn:</strong> A turn is a classic WarLight turn which gets executed after all players have
+                committed their moves.
+            </li>
+            <li><strong>Round:</strong> A turn consists of multiple rounds. During a round, a maximum of 1 move of each
+                of the players gets executed and exactly 1 move, as long as all the players have moves left.
+            </li>
+        </ul>
+
+    </section>
+
+    <section id="move-orders">
+        <h2>Move Orders</h2>
+        <p>There are 3 types of move order settings:</p>
+        <ul>
+            <li><strong>Random:</strong> The move order gets decided randomly each turn.</li>
+            <li><strong>Cycle:</strong> The move order gets randomly decided at the start of the game and then cycles
+                each turn.
+            </li>
+            <li><strong>No luck cycle:</strong> The player who plays their first turn fastest (/picks fastest) moves
+                first during the first turn (/during the picking stage), and then it cycles from there. In team games,
+                the slowest overall player decides which team moves second.
+            </li>
+        </ul>
+
+        <p>With all of these settings, the move order cycles each round.</p>
+
+        <p><strong>Example no luck cycle, team game with the following picking speeds:</strong></p>
+        <ul>
+            <li><strong>Team A:</strong>
+                <ul>
+                    <li>Player A1: 1 minute</li>
+                    <li>Player A2: 4 minutes</li>
+                </ul>
+            </li>
+            <li><strong>Team B:</strong>
+                <ul>
+                    <li>Player B1: 2 minutes</li>
+                    <li>Player B2: 3 minutes</li>
+                </ul>
+            </li>
+        </ul>
+
+        <p>During picks the cycle is then:</p>
+        <ul>
+            <li><strong>Round 1:</strong> B1, A1, A2, B2</li>
+            <li><strong>Round 2:</strong> B2, A2, A1, B1</li>
+            <li><strong>Round 3:</strong> same as round 1</li>
+        </ul>
+
+        <p>First turn then the cycle swaps, so player B2 moves first and player B1 last. Since the player moving last in
+            round 1 always moves first in round 2, they get 2 successive moves, which can be beneficial.</p>
+
+    </section>
+
+    <section id="move-orders-with-cards">
+        <h2>Move Orders With Order Priority And Order Delay</h2>
+        <p>Both the order priority and order delay cards affect the round in which moves get executed.</p>
+
+        <p>Playing order priority cards introduces the new rounds O1, O2,...On, depending on the number of order
+            priority cards played. O1 is executed before the regular round 1, O2 before O1, and so on. Each played order
+            priority card in a certain turn pushes the first order one step higher into the O rounds. Since the first
+            order no longer exists in the regular rounds, all other orders move 1 round up. However, when playing
+            multiple order priority cards, they don’t move up any further. The cycle in the O rounds is the same as the
+            cycle in the regular first round.</p>
+
+        <p>Let’s say, for example, that player A is moving before player B in the cycle. If both player A and player B
+            play an order priority card, then the first order of player A gets executed before the first order of player
+            B. However, if player B truly wants the first order, they can play 2 order priority cards.</p>
+
+        <p>Playing order delay cards introduces the new… let’s call them “sequence of rounds.” Let’s call the standard
+            round sequence without any order delay cards involved the “standard sequence,” and each order delay card
+            then adds the “OD sequence n” for the nth played order delay card. The semantics are now that first all
+            moves in the standard sequence get executed, then comes the OD sequence 1, then the OD sequence 2, and so
+            on.</p>
+
+        <p>Let’s say that both player A and player B have a critical attack which they want to get performed after all
+            opponent moves.</p>
+
+        <ul>
+            <li><strong>Case 1:</strong> Player A plays an order delay card and player B doesn’t &rarr; The critical
+                attack of player A gets executed after the critical attack of player B.
+            </li>
+            <li><strong>Case 2:</strong> Both players play an order delay card &rarr; It depends now on the number of
+                delay moves that got inserted after the order delay card. Moves in the standard sequence have no effect.
+            </li>
+            <li><strong>Case 3:</strong> Player A plays 2 order delay cards and player B plays 1 &rarr; The critical
+                attack of player A gets executed after the critical attack of player B.
+            </li>
+        </ul>
+
+    </section>
+
+    <section id="armies-per-turn">
+        <h2>Armies Per Turn</h2>
+        <p>The <strong>extra armies per territory</strong> setting adjusts your base income depending on the number of
+            territories held. It’s independent of income from other sources like bonuses. The formula is as follows:</p>
+
+        <p><code>‘Adjusted base income’ = Max(‘base income’,’extra income from territories’)</code></p>
+
+        <p>The extra income from territories is rounded down. For example, if you own 11 territories and the settings
+            are extra armies for every 2 territories, then every even number of territories held gives you extra income,
+            and your 11th territory doesn’t give you any income. As the formula states, you get either your base income
+            or the extra income from territories, depending on whichever is higher.</p>
+
+        <p>The <strong>army cap</strong> setting reduces your total income if your stacks get too big compared to your
+            initial income. Let’s consider the following example:</p>
+
+        <ul>
+            <li><strong>Initial total income:</strong> 10</li>
+            <li><strong>Armies on board:</strong> 15</li>
+            <li><strong>Army cap settings:</strong> Armies capped at 2 times the income</li>
+        </ul>
+
+        <p>With this income, you have an army cap of <code>2*10 = 20</code>, which means that the maximum amount of
+            income you can receive is for you to have 20 armies in total on the board. Since you already have 15 armies
+            on board, your income is reduced to 5. Reinforcement cards are not affected by the army cap, and the minimum
+            amount of income you can receive is 0.</p>
+
+    </section>
+
+    <section id="luck-settings">
+        <h2>Luck Settings</h2>
+        <p>WarLight offers two different dimensions when it comes to luck:</p>
+        <ul>
+            <li>The luck modifier in %.</li>
+            <li>The rounding mode, either “weighted random” or “straight round.”</li>
+        </ul>
+
+        <p>Luck now works in the way that first the luck modifier gets applied to the number of kills, and afterwards
+            the rounding luck gets applied to the result.</p>
+
+        <p>The <strong>straight round</strong> rounding mode causes the number of kills to get rounded to the nearest
+            number, with .5 getting rounded up. For example, if you expand 3v2 with 0% luck, you kill a total of <code>3*0.6
+                = 1.8</code> armies, which then gets rounded to 2.</p>
+
+        <p>The <strong>weighted random</strong> rounding mode interprets the decimals as a chance in percentage to get
+            rounded either up or down. For example, with the mentioned 1.8 kills, the .8 is interpreted as an 80% chance
+            to get rounded to 2 and thus a 20% chance to get rounded to 1.</p>
+
+        <p>The <strong>luck modifier</strong> is more complicated than the rounding luck. The formula for the kills is:
+        </p>
+        <p><code>Kills = (SR * L) + (EXP * (100%-L))</code></p>
+
+        <p><strong>Definitions:</strong></p>
+        <ul>
+            <li><strong>EXP:</strong> Expected kills, for example 1.8 in the case of a 3v2 attack.</li>
+            <li><strong>L:</strong> Luck in percent, for example 16%.</li>
+            <li><strong>SR:</strong> Amount of successful rolls. Imagine for each attacking army a random number
+                generator between 1 and 100. Since the offensive kill rate is 60%, each roll that generates a number of
+                at least 60 is considered successful, while the others are unsuccessful. Attacking with 3 armies can
+                give a maximum of 3 successful rolls and a minimum of 0, and each roll has a 60% chance of being
+                successful.
+            </li>
+        </ul>
+
+        <p>The following examples should help to illustrate the formula:</p>
+        <ul>
+            <li><strong>Example 1:</strong> 3v2 attack with 0% luck:<br>
+                <code>Kills = (SR * 0%) + (1.8 * (100%-0%)) = 1.8</code>
+            </li>
+            <li><strong>Example 2:</strong> 3v2 attack with 100% luck and no rolls successful:<br>
+                <code>Kills = (0 * 100%) + (1.8 * (100%-100%)) = 0</code>
+            </li>
+            <li><strong>Example 3:</strong> 4v2 attack with 16% luck and no rolls successful:<br>
+                <code>Kills = (0 * 16%) + (2.4 * (100%-16%)) = 2.4 * 84% = 2.016</code><br>
+                This example explains why it isn’t possible with 16% luck weighted random settings for a 4v2 attack to
+                fail.
+            </li>
+            <li><strong>Example 4:</strong> 2 defending armies with 16% luck and all successful rolls:<br>
+                <code>Kills = (2 * 16%) + (1.4 * (100%-16%)) = 0.32 + 1.176 = 1.496</code><br>
+                This example explains why, with 16% luck straight round, 2 defending neutrals never kill more than 1
+                expanding army.
+            </li>
+        </ul>
+
+    </section>
+
+</article>
+
+<nav id="mainNav">
+    <div class="stickyDiv">
+        <ul class="nav-list">
+            <li><a href="index.html" class="nav-link active">M'Hunters Strategy Guide</a></li>
+            <li><a href="combomb.html" class="nav-link">Commander and Bomb</a></li>
+        </ul>
+    </div>
+</nav>
+<div id="navbarRight">
+    <div class="stickyDiv">
+        <ul class="nav-list">
+            <li><a href="#about" class="nav-link nav-link-right">About This Guide</a></li>
+            <li><a href="#efficient-expansion" class="nav-link nav-link-right">Efficient Expansion</a></li>
+            <li><a href="#expansion-move-order" class="nav-link nav-link-right">Expansion Move Order</a></li>
+            <li><a href="#attacks-with-1" class="nav-link nav-link-right">Attacks With 1</a></li>
+            <li><a href="#avoiding-random-picks" class="nav-link nav-link-right">Avoiding Random Picks</a></li>
+            <li><a href="#possible-pick-combinations" class="nav-link nav-link-right">Possible Pick Combinations</a>
+            </li>
+            <li><a href="#board-dependent-moves" class="nav-link nav-link-right">Board Dependent Moves</a></li>
+            <li><a href="#income-costs-ratio" class="nav-link nav-link-right">Income / Costs Ratio</a></li>
+            <li><a href="#deployment-order" class="nav-link nav-link-right">Deployment Order</a></li>
+            <li><a href="#aggressive-late-order" class="nav-link nav-link-right">Aggressive Late Order Play</a></li>
+            <li><a href="#non-default-expansion" class="nav-link nav-link-right">Do Not Expand By Default</a></li>
+            <li><a href="#fighting-over-expanding" class="nav-link nav-link-right">Fighting > Expanding</a></li>
+            <li><a href="#offense-over-defense" class="nav-link nav-link-right">Offense > Defense</a></li>
+            <li><a href="#playing-for-team" class="nav-link nav-link-right">Play For The Team</a></li>
+            <li><a href="#analyze" class="nav-link nav-link-right">Analyze</a></li>
+            <li><a href="#first-turn-bonus-play" class="nav-link nav-link-right">First Turn Bonus Play</a></li>
+            <li><a href="#working-armies" class="nav-link nav-link-right">Working Armies</a></li>
+            <li><a href="#relative-safety" class="nav-link nav-link-right">Relative Safety</a></li>
+            <li><a href="#norman-way-of-picking" class="nav-link nav-link-right">The "Norman Way" Of Thinking About
+                Picks</a></li>
+            <li><a href="#attacker-vs-defender-play" class="nav-link nav-link-right">Why Attackers Should Flank And
+                Defenders Should Defend
+                Their Bonus</a></li>
+            <li><a href="#dirty-gifting" class="nav-link nav-link-right">Dirty Gifting</a></li>
+            <li><a href="#apendix" class="nav-link nav-link-right">Appending: Game Mechanics</a></li>
+            <li><a href="#move-orders" class="nav-link nav-link-right">Move Orders</a></li>
+            <li><a href="#move-orders-with-cards" class="nav-link nav-link-right">Move Orders With Order Priority And
+                Order Delay
+                Cards</a></li>
+            <li><a href="#armies-per-turn" class="nav-link nav-link-right">Armies Per Turn</a></li>
+            <li><a href="#luck-settings" class="nav-link nav-link-right">Luck Settings</a></li>
+        </ul>
+    </div>
+</div>
+<footer id="pageFooter">
+    <a href="https://github.com/Norman1" class="footer-link" target="_blank">GitHub</a>
+</footer>
+</body>
